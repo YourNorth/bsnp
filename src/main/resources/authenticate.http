@@ -1,0 +1,17 @@
+
+POST http://localhost:8080/authenticate
+Content-Type: application/json
+
+{
+"username": "tim",
+"password": "qwe"
+}
+
+###
+GET http://localhost:8080/user
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzMTQ0NTAsImlhdCI6MTU5NjI3ODQ1MH0.nuKR45jbfg3Nr2usvzDUBmlIBFU74DbnYuLT-_kzlsM
+###
+
+
+

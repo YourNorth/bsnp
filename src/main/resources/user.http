@@ -1,0 +1,44 @@
+GET http://localhost:8080/user
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzMTQ0NTAsImlhdCI6MTU5NjI3ODQ1MH0.nuKR45jbfg3Nr2usvzDUBmlIBFU74DbnYuLT-_kzlsM
+
+###
+GET http://localhost:8080/user?token=1
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzMTQ0NTAsImlhdCI6MTU5NjI3ODQ1MH0.nuKR45jbfg3Nr2usvzDUBmlIBFU74DbnYuLT-_kzlsM
+
+###
+GET http://localhost:8080/user/1
+Accept: application/json
+
+###
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "login": "eiufbw",
+  "password": "jneiuwef",
+  "terrariums": [
+    {
+      "code": "12",
+      "user": "1",
+      "modules":[
+        {
+          "name": "module1",
+          "moduleType": "TYPE1",
+          "settings": "{'foo':'bar'}",
+          "address": "12111112",
+          "terrarium": "1"
+        }
+      ]
+    }
+  ],
+  "role": "ROLE_USER",
+  "tokens": [
+    "1"]
+}
+
+###
+GET localhost:8080/user_test
+Accept: application/json
+
