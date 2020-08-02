@@ -1,7 +1,6 @@
 GET http://localhost:8080/module/1
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzMTQ0NTAsImlhdCI6MTU5NjI3ODQ1MH0.nuKR45jbfg3Nr2usvzDUBmlIBFU74DbnYuLT-_kzlsM
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzODU2ODcsImlhdCI6MTU5NjM0OTY4N30.wj5VywTzwIrmq1opG2_MeTTNSMY8nkibA6Hy-m3aSJ4
 ###
 POST http://localhost:8080/module
 Content-Type: application/json

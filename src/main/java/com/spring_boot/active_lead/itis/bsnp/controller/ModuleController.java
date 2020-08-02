@@ -7,6 +7,7 @@ import com.spring_boot.active_lead.itis.bsnp.service.ModuleForApiService;
 import com.spring_boot.active_lead.itis.bsnp.service.ModuleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,9 +29,10 @@ public class ModuleController {
         return moduleService.findAll();
     }
 
+    @PreAuthorize("hasAuthority('ROLE_USER')")
     @GetMapping("{id}")
     public ModuleForApi getOne(@PathVariable String id) {
-        Long number = null;
+        Long number;
         try {
             number = Long.parseLong(id);
             Optional<Module> module = moduleService.findById(number);
