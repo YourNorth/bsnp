@@ -1,3 +1,11 @@
+# Test: access for anonimus
+POST http://localhost:8080/control
+Content-Type: application/json
+Authorization:
+
+[]
+
+###
 POST http://localhost:8080/control
 Content-Type: application/json
 Authorization: Bearer   eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc4MDI0MDksImlhdCI6MTU5Nzc2NjQwOX0.lFNX9WnajJfsKz4ho-NsorrlLFspcG6a4WLWRCliRE4
