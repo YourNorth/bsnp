@@ -1,4 +1,4 @@
-package com.spring_boot.active_lead.itis.bsnp.model.setting;
+package com.spring_boot.active_lead.itis.bsnp.model.setting.client;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -26,11 +26,6 @@ class HelloWorldController {
     @Autowired
     private UserDetailsService userDetailsService;
 
-    @GetMapping({ "/hello" })
-    public String firstPage() {
-        return "Hello World";
-    }
-
     @PostMapping(value = "/authenticate")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
 

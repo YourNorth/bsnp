@@ -1,0 +1,43 @@
+POST http://localhost:8080/control
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc3NjI1ODEsImlhdCI6MTU5NzcyNjU4MX0.jVlIU8P1MhSDkWYEB9j8fFn6wJB9x7yp5lktnDTTFJ8
+
+[
+  {
+    "type":1,
+    "name":"fish",
+    "params" :
+    [
+      {
+        "code":12,
+        "set_value":144444,
+        "real_value":12222
+      },
+      {
+        "code":7,
+        "set_value":-12,
+        "real_value":0
+      }
+    ]
+  },
+
+  {
+    "type":3,
+    "name":"fisi",
+    "params":
+    [
+      {
+        "code":5,
+        "set_value":0.11,
+        "real_value":0.2
+      },
+      {
+        "code":7,
+        "set_value":-12,
+        "real_value":0
+      }
+    ]
+  }
+]
+
+###

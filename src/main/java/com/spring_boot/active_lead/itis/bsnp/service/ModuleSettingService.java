@@ -1,7 +1,7 @@
 package com.spring_boot.active_lead.itis.bsnp.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.spring_boot.active_lead.itis.bsnp.model.setting.ModuleSetting;
+import com.spring_boot.active_lead.itis.bsnp.model.setting.client.ModuleSetting;
 import org.springframework.stereotype.Service;
 
 @Service

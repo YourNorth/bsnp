@@ -1,11 +1,11 @@
 GET http://localhost:8080/user
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzMTQ0NTAsImlhdCI6MTU5NjI3ODQ1MH0.nuKR45jbfg3Nr2usvzDUBmlIBFU74DbnYuLT-_kzlsM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc3MTY5NjAsImlhdCI6MTU5NzY4MDk2MH0.Mc_sO6Ezr6EBPtqxgsrqj3csayg1k4RyzfcZtNQUx6s
 
 ###
 GET http://localhost:8080/user?token=1
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTYzMTQ0NTAsImlhdCI6MTU5NjI3ODQ1MH0.nuKR45jbfg3Nr2usvzDUBmlIBFU74DbnYuLT-_kzlsM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc3MTY5NjAsImlhdCI6MTU5NzY4MDk2MH0.Mc_sO6Ezr6EBPtqxgsrqj3csayg1k4RyzfcZtNQUx6s
 
 ###
 GET http://localhost:8080/user/1

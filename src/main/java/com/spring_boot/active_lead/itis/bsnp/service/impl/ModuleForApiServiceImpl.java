@@ -2,7 +2,7 @@ package com.spring_boot.active_lead.itis.bsnp.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.spring_boot.active_lead.itis.bsnp.model.Module;
-import com.spring_boot.active_lead.itis.bsnp.model.setting.ModuleForApi;
+import com.spring_boot.active_lead.itis.bsnp.model.setting.client.ModuleForApi;
 import com.spring_boot.active_lead.itis.bsnp.service.ModuleForApiService;
 import com.spring_boot.active_lead.itis.bsnp.service.ModuleSettingService;
 import lombok.extern.slf4j.Slf4j;

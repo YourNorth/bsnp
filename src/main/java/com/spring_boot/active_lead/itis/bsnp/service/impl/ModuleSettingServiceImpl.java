@@ -2,10 +2,9 @@ package com.spring_boot.active_lead.itis.bsnp.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.spring_boot.active_lead.itis.bsnp.model.setting.ModuleSetting;
+import com.spring_boot.active_lead.itis.bsnp.model.setting.client.ModuleSetting;
 import com.spring_boot.active_lead.itis.bsnp.service.ModuleSettingService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.codec.json.Jackson2JsonDecoder;
 import org.springframework.stereotype.Service;
 
 @Slf4j

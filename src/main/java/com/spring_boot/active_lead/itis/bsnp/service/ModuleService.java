@@ -23,4 +23,6 @@ public interface ModuleService extends SuperService<Module, Long> {
     public void delete(Module module);
 
     public List<Module> findAllByTerrarium(Terrarium terrarium);
+
+    public Optional<Module> findByAddress(String address);
 }

@@ -2,7 +2,7 @@ package com.spring_boot.active_lead.itis.bsnp.controller;
 
 import com.spring_boot.active_lead.itis.bsnp.exception.NotFoundException;
 import com.spring_boot.active_lead.itis.bsnp.model.Module;
-import com.spring_boot.active_lead.itis.bsnp.model.setting.ModuleForApi;
+import com.spring_boot.active_lead.itis.bsnp.model.setting.client.ModuleForApi;
 import com.spring_boot.active_lead.itis.bsnp.service.ModuleForApiService;
 import com.spring_boot.active_lead.itis.bsnp.service.ModuleService;
 import lombok.extern.slf4j.Slf4j;

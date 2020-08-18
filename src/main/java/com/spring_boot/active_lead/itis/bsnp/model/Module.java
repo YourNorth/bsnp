@@ -35,7 +35,7 @@ public class Module {
 
     @JsonIgnore
     @Column(name="address")
-    private Byte address;
+    private String address;
 
     @JsonIgnore
     @ManyToOne()

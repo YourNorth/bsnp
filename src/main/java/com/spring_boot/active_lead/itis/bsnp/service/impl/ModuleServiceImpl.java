@@ -52,4 +52,11 @@ public class ModuleServiceImpl implements ModuleService {
         log.info("IN findAllByTerrarium - terrarium: {}, count of models: {}", terrarium, result.size());
         return result;
     }
+
+    @Override
+    public Optional<Module> findByAddress(String address) {
+        Optional<Module> result = moduleRepository.findByAddress(address);
+        log.info("IN findByAddress - address: {}, module: {}", address, result);
+        return result;
+    }
 }
