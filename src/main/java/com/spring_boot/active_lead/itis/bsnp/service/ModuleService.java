@@ -1,5 +1,7 @@
 package com.spring_boot.active_lead.itis.bsnp.service;
 
+import com.spring_boot.active_lead.itis.bsnp.dto.device.request.RequestDeviceModuleDto;
+import com.spring_boot.active_lead.itis.bsnp.dto.device.response.ResponseDeviceModelDto;
 import com.spring_boot.active_lead.itis.bsnp.model.Module;
 import com.spring_boot.active_lead.itis.bsnp.model.Terrarium;
 import com.spring_boot.active_lead.itis.bsnp.model.User;
@@ -25,4 +27,6 @@ public interface ModuleService extends SuperService<Module, Long> {
     public List<Module> findAllByTerrarium(Terrarium terrarium);
 
     public Optional<Module> findByAddress(String address);
+
+    public List<ResponseDeviceModelDto> getResponseForDevice(List<RequestDeviceModuleDto> modules);
 }

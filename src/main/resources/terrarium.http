@@ -1,6 +1,6 @@
 GET http://localhost:8080/terrarium/1/modules
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc3NjI1ODEsImlhdCI6MTU5NzcyNjU4MX0.jVlIU8P1MhSDkWYEB9j8fFn6wJB9x7yp5lktnDTTFJ8
+Authorization: Bearer   eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc4MDI0MDksImlhdCI6MTU5Nzc2NjQwOX0.lFNX9WnajJfsKz4ho-NsorrlLFspcG6a4WLWRCliRE4
 
 ###
 GET http://localhost:8080/terrarium

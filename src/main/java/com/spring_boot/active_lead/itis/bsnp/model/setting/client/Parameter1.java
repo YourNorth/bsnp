@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Parameter {
+public class Parameter1 {
     private String name;
     private String value;
 }

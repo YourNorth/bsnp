@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "module")
@@ -25,13 +26,12 @@ public class Module {
     private String name;
 
     @JsonIgnore
-    @Enumerated(value = EnumType.STRING)
     @Column(name = "module_type")
-    private ModuleType moduleType;
+    private int moduleType;
 
     @JsonIgnore
-    @Column(name = "setting")
-    private String settings;
+    @OneToMany(mappedBy="module", fetch=FetchType.LAZY)
+    private List<Parameter> parameters;
 
     @JsonIgnore
     @Column(name="address")

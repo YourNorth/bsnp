@@ -6,5 +6,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface ModuleForApiService {
-    public ModuleForApi getModuleForApi(Module module);
+    /*public ModuleForApi getModuleForApi(Module module);*/
 }

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ModuleSettingServiceImpl implements ModuleSettingService {
 
-    @Override
+   /* @Override
     public ModuleSetting deserializeSettings(String settings) throws JsonProcessingException {
         ModuleSetting result = new ObjectMapper().readValue(settings, ModuleSetting.class);
         log.info("IN deserializeSettings - settings: {}, moduleSetting: {}", settings, result);
@@ -23,5 +23,5 @@ public class ModuleSettingServiceImpl implements ModuleSettingService {
         String result = new ObjectMapper().writeValueAsString(moduleSetting);
         log.info("IN serializeSettings - moduleSettings: {}, json: {}", moduleSetting, result);
         return result;
-    }
+    }*/
 }

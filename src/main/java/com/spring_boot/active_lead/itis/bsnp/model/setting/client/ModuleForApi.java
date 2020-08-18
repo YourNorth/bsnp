@@ -17,7 +17,7 @@ public class ModuleForApi {
     @JsonIgnore
     private Module module;
 
-    @JsonIgnore
+    /*@JsonIgnore
     private ModuleSetting moduleSetting;
 
     private Long id;
@@ -35,5 +35,5 @@ public class ModuleForApi {
         this.name = module.getName();
         this.editableParameters = moduleSetting.editableParameters;
         this.uneditableParameters = moduleSetting.uneditableParameters;
-    }
+    }*/
 }

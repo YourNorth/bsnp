@@ -1,5 +1,7 @@
 package com.spring_boot.active_lead.itis.bsnp.controller;
 
+import com.spring_boot.active_lead.itis.bsnp.dto.device.request.RequestDeviceModuleDto;
+import com.spring_boot.active_lead.itis.bsnp.dto.device.response.ResponseDeviceModelDto;
 import com.spring_boot.active_lead.itis.bsnp.model.Module;
 import com.spring_boot.active_lead.itis.bsnp.model.setting.client.ModuleForApi;
 import com.spring_boot.active_lead.itis.bsnp.model.setting.module.Answer;
@@ -24,13 +26,10 @@ public class ControlController {
     @Autowired
     ModuleService moduleService;
 
-    @Autowired
-    ModuleForApiService moduleForApiService;
-
     @PostMapping("/control")
-    public Answer[] postSettings(@RequestBody ReceivedModule[] modules){
-        List<Answer> answers = new LinkedList<>();
+    public List<ResponseDeviceModelDto> postSettings(@RequestBody List<RequestDeviceModuleDto> modules){
         log.info("IN postSettings - modules are {}", modules);
+        return moduleService.getResponseForDevice(modules);
         /*for (int i = 0; i < modules.length; i++) {
             Optional<Module> module = moduleService.findByAddress(modules[i].getName());
             if(module.isPresent()){
@@ -38,6 +37,5 @@ public class ControlController {
                 moduleForApi.getEditableParameters().get
             }
         }*/
-        return null; //fixme
     }
 }

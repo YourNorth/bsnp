@@ -1,5 +1,6 @@
 package com.spring_boot.active_lead.itis.bsnp.controller;
 
+import com.spring_boot.active_lead.itis.bsnp.dto.mobile.MobileModuleDto;
 import com.spring_boot.active_lead.itis.bsnp.exception.NotFoundException;
 import com.spring_boot.active_lead.itis.bsnp.model.Module;
 import com.spring_boot.active_lead.itis.bsnp.model.setting.client.ModuleForApi;
@@ -31,8 +32,20 @@ public class ModuleController {
 
     @PreAuthorize("hasAuthority('ROLE_USER')")
     @GetMapping("{id}")
-    public ModuleForApi getOne(@PathVariable String id) {
-        Long number;
+    public MobileModuleDto getOne(@PathVariable String id) {
+        Long number = null;
+        try {
+            number = Long.parseLong(id);
+            Optional<Module> module = moduleService.findById(number);
+            if (module.isPresent()) {
+                log.info(module.toString());
+                return new MobileModuleDto(module.get());
+            }
+        } catch (NumberFormatException e) {
+            log.info("Illegal argument, message of exception: {}", e.getMessage());
+        }
+        throw new NotFoundException();
+        /* Long number;
         try {
             number = Long.parseLong(id);
             Optional<Module> module = moduleService.findById(number);
@@ -44,7 +57,7 @@ public class ModuleController {
         } catch (NumberFormatException e) {
             log.info("Illegal argument, message of exception: {}", e.getMessage());
         }
-        throw new NotFoundException();
+        throw new NotFoundException();*/
         /*Long number = null;
         try {
             number = Long.parseLong(id);

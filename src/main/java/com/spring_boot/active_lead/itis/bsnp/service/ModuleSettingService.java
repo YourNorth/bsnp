@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface ModuleSettingService {
-    public ModuleSetting deserializeSettings(String settings) throws JsonProcessingException;
+    /*public ModuleSetting deserializeSettings(String settings) throws JsonProcessingException;
 
-    String serializeSettings(ModuleSetting moduleSetting) throws JsonProcessingException;
+    String serializeSettings(ModuleSetting moduleSetting) throws JsonProcessingException;*/
 }

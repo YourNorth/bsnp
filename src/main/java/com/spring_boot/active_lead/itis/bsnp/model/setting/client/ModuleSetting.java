@@ -12,7 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class ModuleSetting {
-        List<Parameter> uneditableParameters;
+        private String name;
+        /*List<Parameter> uneditableParameters;
 
-        List<Parameter> editableParameters;
+        List<Parameter> editableParameters;*/
 }

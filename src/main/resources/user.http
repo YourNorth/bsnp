@@ -1,6 +1,6 @@
 GET http://localhost:8080/user
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc3MTY5NjAsImlhdCI6MTU5NzY4MDk2MH0.Mc_sO6Ezr6EBPtqxgsrqj3csayg1k4RyzfcZtNQUx6s
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aW0iLCJleHAiOjE1OTc3NjI1ODEsImlhdCI6MTU5NzcyNjU4MX0.jVlIU8P1MhSDkWYEB9j8fFn6wJB9x7yp5lktnDTTFJ8
 
 ###
 GET http://localhost:8080/user?token=1

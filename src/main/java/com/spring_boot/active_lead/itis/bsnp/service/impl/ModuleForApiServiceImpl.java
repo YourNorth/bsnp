@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class ModuleForApiServiceImpl implements ModuleForApiService {
 
-    @Autowired
+    /*@Autowired
     ModuleSettingService moduleSettingService;
 
     @Override
@@ -26,5 +26,5 @@ public class ModuleForApiServiceImpl implements ModuleForApiService {
             log.warn("getModuleForApi - module: {}, moduleForApi deserialization is impossible", module);
             return null; //fixme i don`t now what it should return
         }
-    }
+    }*/
 }
